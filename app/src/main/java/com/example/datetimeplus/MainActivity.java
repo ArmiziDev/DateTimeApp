@@ -68,6 +68,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState)
     {
+        super.onRestoreInstanceState(savedInstanceState);
+        
         outputResultText.setText(savedInstanceState.getString("outputResultText"));
         resultValue.setText(savedInstanceState.getString("resultValue"));
         timeUnitRadioGroup.check(savedInstanceState.getInt("timeUnitRadioGroup"));
