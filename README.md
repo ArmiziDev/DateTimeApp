@@ -1,5 +1,6 @@
 # DateTimePlus
 This project is an Android application that allows users to manipulate the current date and time by adding specific time units such as hours, days, weeks, or months to it. The application dynamically updates the UI based on the device's orientation and preserves the user's inputs and results when the app state is restored.
+![image](https://github.com/user-attachments/assets/8cf1d55c-baa9-45b8-91ba-89e551a8c1ca)
 
 ## Features
 - Date and Time Manipulation: Users can input a value and select a time unit (hours, days, weeks, or months) to add to the current date and time.
@@ -7,8 +8,6 @@ This project is an Android application that allows users to manipulate the curre
 - State Preservation: The app saves the user's input and history when the app state changes (e.g., screen rotation or backgrounding) and restores it when the user returns.
 - History of Calculations: Each time the user adds time, the result is displayed and saved to a scrollable list for easy reference.
 - Clear Functionality: Users can clear the history of calculations with a single button.
-- ![image](https://github.com/user-attachments/assets/ab2c4ae3-c112-40b3-818a-1228dd6685b0)
-- ![image](https://github.com/user-attachments/assets/8cf1d55c-baa9-45b8-91ba-89e551a8c1ca)
 
   
 ## How to Use
@@ -31,6 +30,7 @@ Through this project, I developed my skills in:
 - State Preservation: The onSaveInstanceState and onRestoreInstanceState methods ensure that the application retains user data and state across orientation changes and app lifecycle events.
 - Dynamic UI Layout: The app loads different layouts depending on the device's orientation, ensuring an optimized user experience.
 - Calendar Manipulation: The app makes use of the Calendar class to add time units and display the updated date and time.
+![image](https://github.com/user-attachments/assets/ab2c4ae3-c112-40b3-818a-1228dd6685b0)
 
 ### Installation
 To run this project:
