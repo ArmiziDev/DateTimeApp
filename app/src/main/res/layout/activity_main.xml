@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="150dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="16dp"
+        android:text="DateTimePlus"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/TitleDivider"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Title" />
+
+    <TextView
+        android:id="@+id/TimeUnitText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Time Unit:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/TitleDivider"
+        app:layout_constraintTop_toBottomOf="@+id/TitleDivider" />
+
+    <RadioGroup
+        android:id="@+id/TimeUnitRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkedButton="@id/MonthsRadioButton"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/TimeUnitText"
+        app:layout_constraintTop_toBottomOf="@+id/TimeUnitText">
+
+        <RadioButton
+            android:id="@+id/HoursRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="TimeUnitRadioSelection"
+            android:text="Hours" />
+
+        <RadioButton
+            android:id="@+id/DaysRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="TimeUnitRadioSelection"
+            android:text="Days" />
+
+        <RadioButton
+            android:id="@+id/WeeksRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="TimeUnitRadioSelection"
+            android:text="Weeks" />
+
+        <RadioButton
+            android:id="@+id/MonthsRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="TimeUnitRadioSelection"
+            android:text="Months" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/ValueAddText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Value To Add:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/TimeUnitRadioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/TimeUnitRadioGroup" />
+
+    <EditText
+        android:id="@+id/AddValueTextInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:ems="10"
+        android:foreground="@color/light_green"
+        android:inputType="numberSigned"
+        app:layout_constraintBaseline_toBaselineOf="@+id/ValueAddText"
+        app:layout_constraintStart_toEndOf="@+id/ValueAddText" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:onClick="Calculate"
+        android:text="Calculate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ValueAddText" />
+
+    <TextView
+        android:id="@+id/ResultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Results:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/TimeUnitRadioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/calculateButton" />
+
+    <TextView
+        android:id="@+id/resultTextOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:background="@color/light_gray"
+        app:layout_constraintBaseline_toBaselineOf="@+id/ResultText"
+        app:layout_constraintStart_toEndOf="@+id/ResultText"
+        tools:text="Example Result Text" />
+
+    <TextView
+        android:id="@+id/HistoryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="History:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/ResultText"
+        app:layout_constraintTop_toBottomOf="@+id/ResultText" />
+
+    <Button
+        android:id="@+id/ClearButton"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="24dp"
+        android:text="Clear All"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ScrollView
+        android:id="@+id/ResultScrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="24dp"
+        android:background="@color/light_gray"
+        app:layout_constraintBottom_toTopOf="@+id/ClearButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HistoryText">
+
+        <LinearLayout
+            android:id="@+id/ResultScrollViewLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
