@@ -7,6 +7,9 @@ This project is an Android application that allows users to manipulate the curre
 - State Preservation: The app saves the user's input and history when the app state changes (e.g., screen rotation or backgrounding) and restores it when the user returns.
 - History of Calculations: Each time the user adds time, the result is displayed and saved to a scrollable list for easy reference.
 - Clear Functionality: Users can clear the history of calculations with a single button.
+- ![image](https://github.com/user-attachments/assets/ab2c4ae3-c112-40b3-818a-1228dd6685b0)
+- ![image](https://github.com/user-attachments/assets/8cf1d55c-baa9-45b8-91ba-89e551a8c1ca)
+
   
 ## How to Use
 - Input a Value: Enter a numerical value in the input field.
