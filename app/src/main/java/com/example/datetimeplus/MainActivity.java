@@ -50,8 +50,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onSaveInstanceState(Bundle savedInstanceState)
     {
-        super.onSaveInstanceState(savedInstanceState);
-
         savedInstanceState.putString("outputResultText", outputResultText.getText().toString());
         savedInstanceState.putString("resultValue", resultValue.getText().toString());
         savedInstanceState.putInt("timeUnitRadioGroup", timeUnitRadioGroup.getCheckedRadioButtonId());
@@ -63,6 +61,8 @@ public class MainActivity extends AppCompatActivity {
             resultHistory[i] = child.getText().toString();
         }
         savedInstanceState.putStringArray("resultHistory", resultHistory);
+
+        super.onSaveInstanceState(savedInstanceState);
     }
 
     @Override
