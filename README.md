@@ -8,14 +8,14 @@ This project is an Android application that allows users to manipulate the curre
 - History of Calculations: Each time the user adds time, the result is displayed and saved to a scrollable list for easy reference.
 - Clear Functionality: Users can clear the history of calculations with a single button.
   
-# How to Use
+## How to Use
 - Input a Value: Enter a numerical value in the input field.
 - Select a Time Unit: Choose from hours, days, weeks, or months.
 - Calculate: Press the "Calculate" button to add the selected amount of time to the current date.
 - View Result: The updated date and time will be displayed in the result field, and the operation will be saved in the history list.
 - Clear History: Press the "Clear" button to remove all previous results.
   
-# What I Learned
+## What I Learned
 Through this project, I developed my skills in:
 
 - Android UI Design: Managing UI components dynamically and adapting layouts for different orientations (portrait vs. landscape).
@@ -24,7 +24,7 @@ Through this project, I developed my skills in:
 - RadioGroup and Event Handling: Managing user inputs through radio buttons and executing actions based on selections.
 - Edge-to-Edge UI Design: Implementing edge-to-edge layouts to make use of the full screen and handle window insets.
   
-# Code Highlights
+## Code Highlights
 - State Preservation: The onSaveInstanceState and onRestoreInstanceState methods ensure that the application retains user data and state across orientation changes and app lifecycle events.
 - Dynamic UI Layout: The app loads different layouts depending on the device's orientation, ensuring an optimized user experience.
 - Calendar Manipulation: The app makes use of the Calendar class to add time units and display the updated date and time.
