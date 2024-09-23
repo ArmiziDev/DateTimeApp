@@ -29,7 +29,7 @@ Through this project, I developed my skills in:
 - Dynamic UI Layout: The app loads different layouts depending on the device's orientation, ensuring an optimized user experience.
 - Calendar Manipulation: The app makes use of the Calendar class to add time units and display the updated date and time.
 
-# Installation
+### Installation
 To run this project:
 1. Clone this repository.
 2. Open the project in Android Studio.
