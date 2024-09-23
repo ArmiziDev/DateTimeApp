@@ -30,6 +30,7 @@ Through this project, I developed my skills in:
 - State Preservation: The onSaveInstanceState and onRestoreInstanceState methods ensure that the application retains user data and state across orientation changes and app lifecycle events.
 - Dynamic UI Layout: The app loads different layouts depending on the device's orientation, ensuring an optimized user experience.
 - Calendar Manipulation: The app makes use of the Calendar class to add time units and display the updated date and time.
+  
 ![image](https://github.com/user-attachments/assets/ab2c4ae3-c112-40b3-818a-1228dd6685b0)
 
 ### Installation
